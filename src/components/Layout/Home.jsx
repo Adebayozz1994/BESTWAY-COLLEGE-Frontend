@@ -1,6 +1,4 @@
-import man from "../../assets/mon.png";
-import Button from "@mui/material/Button";
-// import { motion, useScroll } from "framer-motion";
+
 
 const Home = () => {
  
