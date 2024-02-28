@@ -83,7 +83,7 @@ const AdminSignup = () => {
           </button>
           <p className="text-center">
             You already have an account?{" "}
-            <Link to="/user/login" className="text-gray-600 font-bold">
+            <Link to="/admin/login" className="text-gray-600 font-bold">
               Login
             </Link>
           </p>
