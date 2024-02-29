@@ -1,6 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom"
 import UserSignup from "./components/Users/UserSignup"
-// import Forgot from "./components/Layout/Forgot"
 import UserLogin from "./components/Users/UserLogin"
 import AdminSignup from "./components/Admin/AdminSignup"
 import AdminLogin from "./components/Admin/AdminLogin"
@@ -44,7 +43,7 @@ function App() {
         <Route path="/user/signup" element={<UserSignup />} />
         <Route path="/admin/signup" element={<AdminSignup />} />
         <Route path="/admin/login" element={<AdminLogin />} />
-        {/* <Route path="/forgot" element={<Forgot />} /> */}
+        
 
       </Routes>
     </>
