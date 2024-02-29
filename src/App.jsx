@@ -10,7 +10,7 @@ import UserDashboard from "./components/Users/UserDashboard"
 import UserLayout from "./components/Users/UserLayout"
 import AdminDashboard from "./components/Admin/AdminDashboard"
 import AdminLayout from "./components/Admin/AdminLayout"
-import Forgot from "./components/Layout/Forgot"
+import Forgot from "./components/Users/Forgot"
 import InputOtp from "./components/Users/InputOtp"
 import CreateNewPassword from "./components/Users/CreateNewPassword"
 
