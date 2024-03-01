@@ -41,6 +41,9 @@ const AdminLogin = () => {
         
         <button type="submit" className="bg-red-500 p-3 text-white rounded w-full mb-3 font-bold">login</button>
         <p className="text-center">Don't have an account? <Link to='/admin/signup' className="text-gray-500 font-bold">Sign up</Link></p>
+        <div className="w-full flex justify-center lg:pt-4 text-yellow-300 font-bold">
+                        <Link to='/admin/forgot'>forget password?</Link>
+                    </div>
     </form>
     
     </main>
