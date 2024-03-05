@@ -16,6 +16,7 @@ import CreateNewPassword from "./components/Users/CreateNewPassword";
 import AdminForgot from "./components/Admin/Forgot";
 import AdminInputOtp from "./components/Admin/InputOtp";
 import AdminCreateNewPassword from "./components/Admin/CreateNewPassword";
+import UserNavbar from "./components/Users/UserNavbar";
 function App() {
   return (
     <Routes>
@@ -47,6 +48,7 @@ function App() {
       <Route path="/user/signup" element={<UserSignup />} />
       <Route path="/admin/signup" element={<AdminSignup />} />
       <Route path="/admin/login" element={<AdminLogin />} />
+      <Route path="/navbar" element={<UserNavbar />} />
       
       <Route path="*" element={<NotFound />} />
     </Routes>

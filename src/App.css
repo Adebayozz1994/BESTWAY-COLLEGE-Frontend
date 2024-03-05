@@ -1,3 +1,0 @@
-<Route path="/admin/forgot" element={<AdminForgot />} />
-        <Route path="/admin/verifyotp" element={<AdminInputOtp />} />
-        <Route path="/admin/createpassword" element={<AdminCreateNewPassword />} />
