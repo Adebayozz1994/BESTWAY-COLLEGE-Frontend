@@ -20,12 +20,20 @@ import UserNavbar from "./components/Users/UserNavbar";
 import Carousel from "./components/Layout/Carousel";
 import Photo from "./components/Layout/Photo";
 import News from "./components/Layout/News";
+import About from "./components/Layout/About";
+import ManageStudents from "./components/Admin/ManageStudents";
+import PostAnnouncements from "./components/Admin/PostAnnouncements";
+import ManageEvents from "./components/Admin/ManageEvents";
+import Settings from "./components/Admin/Settings";
+
 function App() {
   return (
     <Routes>
       <Route path="/carousel" element={<Carousel />} />
       <Route path="/photo" element={<Photo />} />
       <Route path="/news" element={<News />} />
+      <Route path="/about" element={<About />} />
+
 
 
       <Route path="/" element={<Layout />}>
@@ -44,11 +52,16 @@ function App() {
 
       <Route path="/admin" element={<AdminLayout />}>
         <Route index element={<Navigate to="/admin/dashboard" />} />
-        <Route path="dashboard" element={<AdminDashboard />} />
         <Route path="forgot" element={<AdminForgot />} />
         <Route path="verifyotp" element={<AdminInputOtp />} />
         <Route path="createpassword" element={<AdminCreateNewPassword />} />
 
+        <Route path="dashboard" element={<AdminDashboard />}>
+          <Route path="students" element={<ManageStudents />} />
+          <Route path="announcements" element={<PostAnnouncements />} />
+          <Route path="events" element={<ManageEvents />} />
+          <Route path="settings" element={<Settings />} />
+        </Route>
 
       </Route>
 
