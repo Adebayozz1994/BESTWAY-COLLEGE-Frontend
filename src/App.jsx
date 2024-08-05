@@ -17,9 +17,11 @@ import AdminForgot from "./components/Admin/Forgot";
 import AdminInputOtp from "./components/Admin/InputOtp";
 import AdminCreateNewPassword from "./components/Admin/CreateNewPassword";
 import UserNavbar from "./components/Users/UserNavbar";
+import Carousel from "./components/Layout/Carousel";
 function App() {
   return (
     <Routes>
+      <Route path="/carousel" element={<Carousel />} />
       <Route path="/" element={<Layout />}>
         <Route index element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
