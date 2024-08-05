@@ -18,10 +18,13 @@ import AdminInputOtp from "./components/Admin/InputOtp";
 import AdminCreateNewPassword from "./components/Admin/CreateNewPassword";
 import UserNavbar from "./components/Users/UserNavbar";
 import Carousel from "./components/Layout/Carousel";
+import Photo from "./components/Layout/Photo";
 function App() {
   return (
     <Routes>
       <Route path="/carousel" element={<Carousel />} />
+      <Route path="/photo" element={<Photo />} />
+
       <Route path="/" element={<Layout />}>
         <Route index element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
