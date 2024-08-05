@@ -30,7 +30,7 @@ const Carousel = () => {
       <div className="overflow-hidden h-full">
         <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} className="w-full h-full object-cover" />
       </div>
-      <button
+      {/* <button
         onClick={prevSlide}
         className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1"
       >
@@ -41,7 +41,7 @@ const Carousel = () => {
         className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white px-2 py-1"
       >
         Next
-      </button>
+      </button> */}
     </div>
   );
 }

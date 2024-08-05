@@ -19,11 +19,14 @@ import AdminCreateNewPassword from "./components/Admin/CreateNewPassword";
 import UserNavbar from "./components/Users/UserNavbar";
 import Carousel from "./components/Layout/Carousel";
 import Photo from "./components/Layout/Photo";
+import News from "./components/Layout/News";
 function App() {
   return (
     <Routes>
       <Route path="/carousel" element={<Carousel />} />
       <Route path="/photo" element={<Photo />} />
+      <Route path="/news" element={<News />} />
+
 
       <Route path="/" element={<Layout />}>
         <Route index element={<Navigate to="/home" />} />
